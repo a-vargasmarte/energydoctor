@@ -1,0 +1,121 @@
+<!-- <!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      font-family: sans-serif;
+    }
+    .selected {
+      fill: none;
+    }
+
+    .button {
+      min-width: 130px;
+      padding: 4px 5px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 13px;
+      border: 1px solid #e0e0e0;
+      text-decoration: none;
+    }
+
+    .button.active {
+      background: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+   <div id="toolbar">
+  <button id="all" class="button active">All</button>
+  <button id="saleType" class="button">Sale Type</button>
+  <button id="Brewery Name" class="button">By Brewery</button>
+  <button id="Beer Style" class="button">By Style</button> -->
+<!-- <button id="Type" class="button">By Type</button> -->
+<!-- </div> -->
+<!-- <div id="graph" class="conceptmap"></div>
+  <div id="graph-info"></div> -->
+
+<!-- <script src="./app.js"></script>
+</body> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <title>10.2 - File Separation</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png"/></a>
+      </div>
+    </nav>
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+      <div id="toolbar">
+        <a href="/"
+          ><button id="all" class="button active">Amps over time</button>
+        </a>
+      </div>
+      <div id="selections" class="row">
+        <div class="col-md-4">
+          <div id="slider-div">
+            <label
+              >Hour: <span id="dateLabel1">0</span> -
+              <span id="dateLabel2">23</span></label
+            >
+            <div id="date-slider"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- <select id="coin-select" class="form-control">
+            <option selected value="bitcoin">Bitcoin</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="bitcoin_cash">Bitcoin Cash</option>
+            <option value="litecoin">Litecoin</option>
+            <option value="ripple">Ripple</option>
+          </select> -->
+        </div>
+        <div class="col-md-4">
+          <select id="var-select" class="form-control">
+            <option selected value="amps">Amps</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div id="chart-area"></div>
+      </div>
+    </div>
+
+    <!-- External JS libraries -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/meanAmps.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+  </body>
+</html>
